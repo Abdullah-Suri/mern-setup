@@ -1,0 +1,27 @@
+{
+  "name": "mern-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run dev --prefix client",
+    "server": "nodemon --env-file=server/.env server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "google-auth-library": "^10.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.5"
+  }
+}
